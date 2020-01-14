@@ -1,0 +1,36 @@
+body{
+	 background-color: teal;
+	width: auto;
+	height: auto;
+}
+.fash
+{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: relative;
+  float: left;
+  left:45%;
+  margin-top:30%;
+}
+
+----------------------------------------------------------------------
+
+if(keyPr === 39 && x<=645){ 
+        x = x+20; //right arrow add 20 from current
+    }
+    else if(keyPr === 37 && x>10){
+        x = x-20; //left arrow subtract 20 from current
+    }
+    else if(keyPr === 38 && y>10) {
+        y = y-20; //top arrow subtract 20 from current
+    }
+    else if(keyPr === 40 && y<=340){
+        y = y+20; //bottom arrow add 20 from current
+    }
+    
+    
+    ctx.clearRect(0,0, 800, 800);
+  
+    //Drawing rectangle  nouvelle position
+    drawRect(x,y,wid,hei);
